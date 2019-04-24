@@ -123,22 +123,22 @@ def cartesian_product(array):
 				# now transfer the data to our tmp_collection
 				# it will be added to the new_collection to output
 				tmp_collection.append(tmp_group)
-			
-				# exit old_group loop
-				pass
 
-			# exit new_collection loop
+			# exit old_group loop
 			pass
-		
+
+		# exit new_collection loop
+		pass
+
 		# an item can't be changed while being looped over;
 		#    we are no longer looping over new_collection
 		new_collection = tmp_collection
-		
-		# exit old_collection loop
-		pass
+
+	# exit old_collection loop
+	pass
 
 	# after the loops are over, we can return the result
 	print(new_collection)
 	return new_collection
 
-result = cartesian_product([[1,2,3],['a','b','c']])
+result = cartesian_product([['a','b','c'],[1,2,3],['x','y','z']])
