@@ -73,7 +73,7 @@
 	# return the filled base array.
 '''
 
-def cartesian_product(array)
+def cartesian_product(array):
 	'''
 	Vocabulary:
 	- a collection is an array of arrays
@@ -117,9 +117,9 @@ def cartesian_product(array)
 				# new_group contains a set of important data
 				# there is still yet more data to append to it...
 				# ...set tmp_group to new_group and add data to it
-				tmp_group = new_group
+				tmp_group = new_group.copy()
 				tmp_group.append(data)
-				
+
 				# now transfer the data to our tmp_collection
 				# it will be added to the new_collection to output
 				tmp_collection.append(tmp_group)
@@ -130,10 +130,9 @@ def cartesian_product(array)
 			# exit new_collection loop
 			pass
 		
-		# we are now out of the new_collection loop;
-		#    this means it is mutable again
-		# since an item can't be changed while being looped over
-		new_collection.concat(tmp_collection)
+		# an item can't be changed while being looped over;
+		#    we are no longer looping over new_collection
+		new_collection = tmp_collection
 		
 		# exit old_collection loop
 		pass
@@ -141,3 +140,5 @@ def cartesian_product(array)
 	# after the loops are over, we can return the result
 	print(new_collection)
 	return new_collection
+
+result = cartesian_product([[1,2,3],['a','b','c']])
