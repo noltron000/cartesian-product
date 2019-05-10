@@ -65,14 +65,14 @@ def cartesian_product(array):
 	# after the loops are over, we can return the result
 	return new_collection
 
+if __name__ == '__main__':
+	# this part is just calling the function as an example
+	X={'X'}
+	Y={'Y'}
+	Z={'Z'}
 
-# this part is just calling the function as an example
-X={'X'}
-Y={'Y'}
-Z={'Z'}
+	simple_array = [[1,2,3],['a','b','c'],[X,Y,Z]]
+	result = cartesian_product(simple_array)
 
-simple_array = [[1,2,3],['a','b','c'],[X,Y,Z]]
-result = cartesian_product(simple_array)
-
-for group in result:
-	print(group)
+	for group in result:
+		print(group)
