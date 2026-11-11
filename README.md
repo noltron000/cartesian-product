@@ -10,4 +10,4 @@ For example, the Cartesian product of `{1, 2}` and `{a, b}` is `{(1, a), (1, b),
 Learn more about it [on Wikipedia](https://en.wikipedia.org/wiki/Cartesian_product).
 
 ## The Function at a Glance...
-https://github.com/noltron000/cartesian-product/blob/master/cartesian.py#L1-L78
+https://github.com/noltron000/cartesian-product/blob/6387ffa9538f9adfc7889f4d2d3ab0682b4d2326/cartesian.py#L1-L78
