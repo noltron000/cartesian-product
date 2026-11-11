@@ -8,3 +8,6 @@ A Cartesian product combines two or more sets to form a set of ordered tuples, w
 For example, the Cartesian product of `{1, 2}` and `{a, b}` is `{(1, a), (1, b), (2, a), (2, b)}`.
 
 Learn more about it [on Wikipedia](https://en.wikipedia.org/wiki/Cartesian_product).
+
+## The Function at a Glance...
+https://github.com/noltron000/cartesian-product/blob/master/cartesian.py#L1-L78
